@@ -7,7 +7,7 @@ $(function(){
     	tabLocation: 'left',
     	speed: 300,
     	action: 'click',
-    	topPos: '200px',
+    	topPos: '150px',
     	fixedPosition: false
 	});
 });
