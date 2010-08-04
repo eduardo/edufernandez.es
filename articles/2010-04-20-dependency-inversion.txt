@@ -11,22 +11,7 @@ The Dependency Inversion Principle is one form of decoupling as it states:
 
 So what does this actually mean? Let’s look at a method in a BlogService.
 
-	public class BlogService
-	{
-	    private Repository _repository;
-
-	    public BlogService()
-	    {
-	        _repository = new Repository();
-	    }
-
-	    public void ProcessComment(Comment comment)
-	    {
-	        _repository.Save(comment);
-
-	        // Send notification to author and do other stuff here
-	    }
-	}
+<script src="http://gist.github.com/508300.js?file=gistfile1.cs"></script>
 
 The BlogService, being the high-level module, has a dependency on the Repository, the low-level module. (A dependency, by the way, can easily be spotted by looking for the new keyword.)
 
@@ -36,37 +21,11 @@ To break this dependency, we are supposed to invert the dependency and make both
 
 To create the abstraction we introduce an interface called IRepository. In order to make the BlogService depend upon the abstraction, we need to remove the creation of the Repository inside of the BlogService. Instead we inject an IRepository in the constructor when we create a BlogService instance. This way the BlogService is decoupled from the Repository, and it does not really care what repository it gets, as long as it implements the IRepository.
 
-	public interface IRepository
-	{
-	    void Save(Comment comment);
-	}
-
-	public class BlogService
-	{
-	    private IRepository _repository;
-
-	    public BlogService(IRepository repository)
-	    {
-	        _repository = repository;
-	    }
-
-	    public void ProcessComment(Comment comment)
-	    {
-	        _repository().Save(comment);
-
-	        // Send notification to author and do other stuff here
-	    }
-	}
+<script src="http://gist.github.com/508300.js?file=gistfile2.cs"></script>
 
 To make the Repository depend on an abstraction and make it useful for the BlogService, it simply needs to implement the IRepository interface.
 
-	public class Repository : IRepository
-	{
-	    public void Save(Comment comment)
-	    {
-	        // Save the comment
-	    }
-	}
+<script src="http://gist.github.com/508300.js?file=gistfile3.cs"></script>
 
 The dependency between BlogService and Repository is now removed and both depends upon an abstraction; the IRepository. Both classes can easily be changed, and even replaced without affecting each other.
 
