@@ -94,6 +94,7 @@ code {
 }
 .gist {
 	font-size:small;
+	line-height:normal;
 }
 pre {
   padding: 20px;
