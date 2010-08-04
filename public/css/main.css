@@ -16,6 +16,9 @@ body, html {
 	width: 720px;
 	color: #ccc;
 }
+#header a{
+	text-decoration: none;
+}
 #content {
 	margin: 0 auto;
 	font-family: 'Baskerville', Georgia, Times, serif;
