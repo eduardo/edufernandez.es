@@ -10,12 +10,17 @@
     <title><%= title %></title>
   </head>
   <body>
-    <section>
-      <%= yield %> 
-    </section>
-    <footer>
-      Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
-    </footer>
+	<div id="header">
+		<div>thedersen.com</div>
+	</div>
+	<div id="content">
+    	<section>
+      		<%= yield %> 
+    	</section>
+    	<footer>
+      	Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
+    	</footer>
+	</div>
 	<div class="slide-out-div">
 	    <a class="handle" href="#">About Me</a>
 	    <ul id="about-me">

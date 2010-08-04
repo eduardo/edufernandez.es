@@ -1,7 +1,19 @@
-html { 
-	margin: 20px 
-}
 body {
+	width: 100%;
+}
+#header {
+	width: 100%;
+	font-size: 100px;
+	margin-top: -40px;
+	padding: 0;
+	border-bottom: 1px dashed;
+	color: #ccc;
+}
+#header div {
+	margin: 0 auto;
+	width: 720px;
+}
+#content {
 	margin: 0 auto;
 	font-family: 'Baskerville', Georgia, Times, serif;
 	font-size: 20px;
@@ -11,8 +23,6 @@ body {
 }
 header, footer, section, article {
 	display: block;
-}
-#content {
 }
 #by {
 	font-style: italic;
@@ -105,7 +115,7 @@ pre {
 blockquote {
 	font-style: italic;
 }
-body > footer {
+#content > footer {
 	text-align: left;
 	margin-left: 10px;
 	font-style: italic;
