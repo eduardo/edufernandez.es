@@ -30,7 +30,7 @@ So what does this actually mean? Let’s look at a method in a BlogService.
 
 The BlogService, being the high-level module, has a dependency on the Repository, the low-level module. (A dependency, by the way, can easily be spotted by looking for the new keyword.)
 
-![Image01](/images/dependency-inversion-01.png)
+![Image01](/articles/images/dependency-inversion-01.png)
 
 To break this dependency, we are supposed to invert the dependency and make both the Repository and BlogService dependent to an abstraction.
 
@@ -70,7 +70,7 @@ To make the Repository depend on an abstraction and make it useful for the BlogS
 
 The dependency between BlogService and Repository is now removed and both depends upon an abstraction; the IRepository. Both classes can easily be changed, and even replaced without affecting each other.
 
-![Image02](/images/dependency-inversion-02.png)
+![Image02](/articles/images/dependency-inversion-02.png)
 
 ## Who “owns” the abstraction?
 
