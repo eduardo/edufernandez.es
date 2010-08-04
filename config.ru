@@ -8,7 +8,7 @@ use Rack::CommonLogger
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
-use Rack::ShowExceptions
+
 #
 # Create and configure a toto instance
 #
@@ -20,7 +20,6 @@ toto = Toto::Server.new do
   set :author,    "Thomas Pedersen"                           # blog author
   set :title,     "thedersen.com"   	                      # site title
   set :url,       "http://thedersen.com"                      # site root URL
-  set :feed,      "http://feeds.feedburner.com/thedersen"     # site feed URL
   set :prefix,    ""                                          # common path prefix for all pages
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
