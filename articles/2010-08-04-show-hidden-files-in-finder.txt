@@ -2,7 +2,7 @@
 title: Show hidden files in Finder
 date: 04/08/2010
 
-By convention all files starting with a dot (.) is hidden in Mac OS X. To view these files open terminal and type the following:
+By convention all files starting with a dot (.) is hidden in Mac OS X. To view these files open terminal and type the following:~
 
 <script src="http://gist.github.com/508298.js?file=gistfile1.sh"></script>
 
