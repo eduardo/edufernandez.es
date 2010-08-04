@@ -8,7 +8,7 @@ use Rack::CommonLogger
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
-
+use Rack::ShowExceptions
 #
 # Create and configure a toto instance
 #
