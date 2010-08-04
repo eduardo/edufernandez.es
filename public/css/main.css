@@ -1,17 +1,20 @@
-body {
-	width: 100%;
+body, html {
+	margin: 0;
+	padding: 0;
 }
 #header {
 	width: 100%;
-	font-size: 100px;
-	margin-top: -40px;
 	padding: 0;
-	border-bottom: 1px dashed;
-	color: #ccc;
+	margin: 0;
+	border-bottom: 1px dashed #cc0000;
 }
 #header div {
-	margin: 0 auto;
+	margin: -43px auto -28px auto;
+	letter-spacing: 5px;
+	font-size: 113px;
+	padding: 0;
 	width: 720px;
+	color: #ccc;
 }
 #content {
 	margin: 0 auto;
