@@ -44,7 +44,7 @@ header, footer, section, article {
 	margin-right: 30px;
 }
 a {
-	color: #b83000;
+	color: #cc0000;
 }
 h1 a {
 	color: black;
@@ -126,7 +126,7 @@ blockquote {
 	padding: 5px 20px; 
 	width: 110; 
 	background: #fff; 
-	border: 1px solid #282828; 
+	border: 1px solid #cc0000; 
 }
 #about-me img { 
 	vertical-align: middle;
