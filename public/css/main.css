@@ -112,3 +112,16 @@ body > footer {
 	font-size: 18px;
 	color: #888;
 }
+.slide-out-div { 
+	padding: 5px 20px; 
+	width: 110; 
+	background: #fff; 
+	border: 1px solid #282828; 
+}
+#about_me img { 
+	vertical-align: middle;
+	margin: 5px 5px;
+}
+#about_me a:hover { 
+	text-decoration:none; 
+}
