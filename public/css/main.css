@@ -29,6 +29,7 @@ body, html {
 }
 header, footer, section, article {
 	display: block;
+	text-align: justify;
 }
 #by {
 	font-style: italic;
