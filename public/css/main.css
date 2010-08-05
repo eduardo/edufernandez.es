@@ -14,7 +14,6 @@ body, html {
 	font-size: 113px;
 	padding: 0;
 	width: 720px;
-	color: #ccc;
 }
 #header a{
 	text-decoration: none;
@@ -40,9 +39,6 @@ header, footer, section, article {
 	position: absolute;
 	font-size: 24px;
 	margin: -135px 0 0 70px;
-}
-#path {
-	color: #b53131;
 }
 .date {
 	font-style: italic;
@@ -107,17 +103,13 @@ h1, h2, h3, h4 {
 	display: inline;
 	margin: 0;
 }
-ul, li {
-}
-code {
+code, .gist {
 	font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
-}
-.gist {
 	font-size:small;
 	line-height:normal;
 }
 pre {
-	padding: 20px;
+	padding: 0px 10px;
 }
 blockquote {
 	font-style: italic;
