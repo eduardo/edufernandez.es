@@ -30,6 +30,20 @@ desc "Publish my blog."
 task :publish do
   toto "publishing your article(s)..."
   `git push heroku master`
+  Rake::Task['ping_feed'].execute 
+end
+
+desc "Pinging feedburner.com"
+task :ping_feed do
+  toto "pinging feedburner.com..."
+  require 'net/http'
+  require 'uri'
+  res = Net::HTTP.get('feedburner.google.com','/fb/a/pingSubmit?bloglink=' + URI.escape('http://feeds.feedburner.com/thedersen'))
+  if res.include? "Succesfully pinged"
+    toto "Succesfully pinged"
+  else
+    toto "Pinging failed"
+  end
 end
 
 desc "Start the thin server."
