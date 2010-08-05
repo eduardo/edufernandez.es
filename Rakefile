@@ -20,6 +20,7 @@ task :new do
       file.write article
     end
     toto "an article was created for you at #{path}."
+    `mate #{path}`
   else
     toto "I can't create the article, #{path} already exists."
   end
