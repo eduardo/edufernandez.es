@@ -110,6 +110,7 @@ code, .gist {
 }
 pre {
 	padding: 0px 10px;
+	overflow: auto;
 }
 blockquote {
 	font-style: italic;
