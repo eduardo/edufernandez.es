@@ -138,6 +138,7 @@ blockquote {
 #about-me img { 
 	vertical-align: middle;
 	margin: 5px 5px;
+	border: 0;
 }
 #about-me a { 
 	text-decoration:none;
