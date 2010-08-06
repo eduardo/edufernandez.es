@@ -1,21 +1,15 @@
 body, html {
 	margin: 0;
-	padding: 0;
 }
 #header {
-	width: 100%;
-	padding: 0;
-	margin: 0;
 	border-bottom: 1px dashed #cc0000;
 }
-#header div {
+#header a {
+	display: block;
 	margin: -40px auto -28px auto;
 	letter-spacing: 5px;
 	font-size: 113px;
-	padding: 0;
 	width: 720px;
-}
-#header a{
 	text-decoration: none;
 }
 #content {
@@ -26,19 +20,32 @@ body, html {
 	padding: 15px;
 	width: 720px;
 }
+#content footer {
+	text-align: center;
+	font-style: italic;
+	font-size: 16px;
+	color: #888;
+}
 header, footer, section, article {
 	display: block;
 	text-align: justify;
 }
-#by {
-	font-style: italic;
-	margin-right: 5px;
-	font-size: 28px;
+h1, h2, h3, h4 {
+	display: inline;
+	margin: 0;
 }
-#caption {
-	position: absolute;
-	font-size: 24px;
-	margin: -135px 0 0 70px;
+h1 a {
+	color: black;
+	text-decoration: none;
+}
+a {
+	color: #cc0000;
+}
+a:hover {
+	text-decoration: underline;
+}
+.post p {
+	margin: 10px 0;
 }
 .date {
 	font-style: italic;
@@ -46,42 +53,7 @@ header, footer, section, article {
 	line-height: 43px;
 	margin-right: 0;
 }
-a {
-	color: #cc0000;
-}
-h1 a {
-	color: black;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-body > header > h1 {
-	border-left: 30px solid black;
-	padding-left: 30px;
-	font-size: 201px;
-	margin: 100px 0 15px 0;
-	font-weight: normal;
-}
-.post header {
-	margin-bottom: 10px;
-}
-.post .body p:first-child {
-	margin-top: 0;
-}
-.post .body p:last-child {
-	margin-bottom: 0;
-}
-.post {
-	margin-bottom: 30px;
-}
-.post:last-child {
-	margin-bottom: 10px;
-}
-.post p {
-	margin: 10px 0;
-}
-.post .more {
+.more {
 	margin-top: -10px;
 	margin-right: 0;
 	font-style: italic;
@@ -93,20 +65,10 @@ body > header > h1 {
 .more a:hover { 
 	text-decoration: underline 
 }
-body > header {
-	display: block;
-	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
-}
-h1, h2, h3, h4 {
-	display: inline;
-	margin: 0;
-}
 code, .gist {
 	font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
-	font-size:small;
-	line-height:normal;
+	font-size: small;
+	line-height: normal;
 }
 pre {
 	padding: 0px 10px;
@@ -115,18 +77,17 @@ pre {
 blockquote {
 	font-style: italic;
 }
-#content > footer {
-	text-align: left;
-	margin-left: 10px;
-	font-style: italic;
-	font-size: 16px;
-	color: #888;
-}
 .slide-out-div { 
-	padding: 5px 20px; 
-	width: 110; 
+	padding-right: 20px; 
+	width: 180px; 
 	background: #fff; 
 	border: 1px solid #cc0000; 
+}
+#about-me {
+	list-style-type: none;
+}
+#about-me li {
+	margin-left: 0;
 }
 #about-me img { 
 	vertical-align: middle;
@@ -134,13 +95,6 @@ blockquote {
 	border: 0;
 }
 #about-me a { 
-	text-decoration:none;
+	text-decoration: none;
 	color: black;
-}
-#about-me li {
-	margin-left: 0;
-}
-
-#about-me {
-	list-style-type: none;
 }
