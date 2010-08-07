@@ -81,6 +81,21 @@ pre {
 blockquote {
 	font-style: italic;
 }
+#archives ul{
+	list-style-image:url("/favicon.ico");
+	padding-left: 25px;
+}
+#archives a {
+	text-decoration: none;
+}
+#archives a:hover {
+	text-decoration: underline;
+}
+#archives .date {
+	font-style: italic;
+	font-size: small;
+	float: none;
+}
 .slide-out-div { 
 	padding-right: 20px; 
 	width: 180px; 
