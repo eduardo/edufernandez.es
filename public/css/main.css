@@ -21,10 +21,14 @@ body, html {
 	width: 720px;
 }
 #content footer {
-	text-align: center;
 	font-style: italic;
 	font-size: 16px;
 	color: #888;
+	line-height: normal;
+}
+#content footer img {
+	margin-right: 5px;
+	float: left;
 }
 header, footer, section, article {
 	display: block;
