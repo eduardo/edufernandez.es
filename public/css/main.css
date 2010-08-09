@@ -63,6 +63,9 @@ a:hover {
 	font-style: italic;
 	text-align: right;
 }
+.more a:first-child{
+	color: #b2beb5;
+}
 .more a {
 	text-decoration: none;
 }
