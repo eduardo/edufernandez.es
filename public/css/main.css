@@ -58,12 +58,13 @@ a:hover {
 	margin-right: 0;
 }
 .more {
-	margin-top: -10px;
+	margin-top: -15px;
 	margin-right: 0;
 	font-style: italic;
 	text-align: right;
+	font-size: smaller;
 }
-.more a:first-child{
+.more a:first-child {
 	color: #b2beb5;
 }
 .more a {
