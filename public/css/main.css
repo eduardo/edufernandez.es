@@ -81,7 +81,7 @@ pre {
 blockquote {
 	font-style: italic;
 }
-#archives ul{
+#archives {
 	list-style-image:url("/favicon.ico");
 	padding-left: 25px;
 }
