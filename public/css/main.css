@@ -1,23 +1,15 @@
 body, html {
 	margin: 0;
 }
-#header {
-	border-bottom: 1px dashed #cc0000;
-}
-#header a {
-	display: block;
-	margin: -40px auto -28px auto;
-	letter-spacing: 5px;
-	font-size: 113px;
-	width: 720px;
-	text-decoration: none;
+#header img {
+	border: 0;
 }
 #content {
 	margin: 0 auto;
 	font-family: 'Baskerville', Georgia, Times, serif;
 	font-size: 20px;
 	line-height: 30px;
-	padding: 15px;
+	padding-bottom: 15px;
 	width: 720px;
 }
 #content footer {
