@@ -11,22 +11,26 @@ We do a presenter first approach. This means that the presenter is created/loade
 The interface implemented by all presenters looks something like this:
 	
 <script src="http://gist.github.com/508315.js?file=gistfile1.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 	
 The initialize method is called whenever the presenter is constructed. The UI property returns the view. The reason that it is of type object, is that then there is no need to reference System.Windows.Forms in the presenter library. This is not crucial as long as you keep UI elements out of the presenters since they are not very unit test friendly.
 
 Instead of the presenters implementing IPresenter directly, we create a specific interface that inherits IPresenter for each presenter. This interface is usually empty.
 
 <script src="http://gist.github.com/508315.js?file=gistfile2.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 
 In addition, the presenter must implement a callback interface. The view knows nothing about the presenter itself. Instead it gets a reference to this interface which contains one method for each operation that can be performed on the view plus one for each event that can be raised by a control in the view. Needless to say, we don’t create a method for all events, only the ones we need to respond on.
 
 <script src="http://gist.github.com/508315.js?file=gistfile3.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 
 As you may have noticed, both methods on this interface is declared without any parameters and returns void. This is important, otherwise presentation logic might leaking into the view. The presenter always asks the view when it needs information, the view never tells the presenter anything, thus parameter less. Instead of the presenter returning something to the view, it explicitly sets a property or several on the view, thus void. This is actually what makes the view passive – the presenter is doing all the work.
 
 Enough abstractions, let’s move on to the actual implementation of the presenter.
 
 <script src="http://gist.github.com/508315.js?file=gistfile4.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 
 Nothing magic going on here. As you can see the presenter implements both the IMyPresenter interface as well as the IMyPresenterCallbacks and it gets an instance of an IMyView injected in the constructor, which again can be retrieved form the UI property.
 
@@ -41,16 +45,19 @@ So, how does the callback methods gets invoked? To find out we need to take a lo
 The base interface for all view looks like this:
 
 <script src="http://gist.github.com/508315.js?file=gistfile5.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 
 A simple generic interface with one method used by the presenter to attach itself. The TCallbacks type parameter is the type of the callbacks interface that the presenter implements. In this example; IMyPresenterCallbacks.
 
 As you saw, MyPresenter got an instance of an IMyView. This is the interface specific to one view and it contains properties for all input fields such as text boxes, check boxes, drop downs etc., labels and state properties of the controls.
 
 <script src="http://gist.github.com/508315.js?file=gistfile6.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 
 Finally, we’ll look at how the view is implemented.
 
 <script src="http://gist.github.com/508315.js?file=gistfile7.cs"></script>
+<noscript><a href="http://gist.github.com/508315">View code</a> </noscript>
 	
 This class is a simple Windows Forms form or control implementing the IMyView interface. The properties on the interface is basically just wrapping the properties of the controls, and does not do anything else. Remember that any logic is in the presenter.
 

@@ -12,6 +12,7 @@ What this means is that you can use the SynchronizationContext class to dispatch
 
 Here is a simple example where we show a message box from a background worker using the **Send** method on the SynchronizationContext class. When we initialize the **Worker** class on line 15 we pass in **SynchronizationContext.Current** which holds the synchronization context for the current thread, i.e. the main UI thread. We then use this context to dispatch calls from the background worker to the UI thread, and the message box is properly shown.
 
-<script src="http://gist.github.com/508277.js"> </script>
+<script src="http://gist.github.com/508277.js"></script>
+<noscript><a href="http://gist.github.com/508277">View code</a> </noscript>
 
 The full example application can be found [here](http://github.com/thedersen/Sandbox/tree/master/SynchronizationContext/).

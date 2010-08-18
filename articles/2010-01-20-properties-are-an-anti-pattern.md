@@ -13,22 +13,26 @@ Let me explain by giving an example.
 Take a prescription object with one property, CeasedAt. (Ceasing a prescription means aborting the treatment.) To cease a prescription we simply set DateTime.Now on this property. Fine, that works.
 
 <script src="http://gist.github.com/508310.js?file=gistfile1.cs"></script>
+<noscript><a href="http://gist.github.com/508310">View code</a> </noscript>
 
 Then of course the requirements changes. We now have to specify a reason why the prescription is ceased. We add a new property to the prescription object, CeasedBecauseOf.
 
 <script src="http://gist.github.com/508310.js?file=gistfile2.cs"></script>
+<noscript><a href="http://gist.github.com/508310">View code</a> </noscript>
 
 Fine, but how can we ensure that this is set every time we set the CeasedAt property? Well, the problem is that we can’t. All the developers must know this when using this class, and let’s face it, there is a very small chance of that happening, at least over a period of time. Of course we can add a comment describing the requirement, but I don’t like comments. Not everybody reads them, and they tend to get outdated over time as the code changes and the comments doesn’t. I want the code to express it self.
 
 So let’s try to express this requirement using nothing but code. We keep the CeasedAt property but make the setter private. Then we add a method, Cease.
 
 <script src="http://gist.github.com/508310.js?file=gistfile3.cs"></script>
+<noscript><a href="http://gist.github.com/508310">View code</a> </noscript>
 
-Much better! Not only is the code now both easier to understand as well as use, but it’s also easier to change since we have encapsulated how we cease a prescription. We are also protected against somebody somewhere accidently setting CeasedAt on a already ceased prescription.
+Much better! Not only is the code now both easier to understand as well as use, but it’s also easier to change since we have encapsulated how we cease a prescription. We are also protected against somebody somewhere accidentally setting CeasedAt on a already ceased prescription.
 
 When requirement changes we simply add reason as a parameter to the Cease method.
 
 <script src="http://gist.github.com/508310.js?file=gistfile4.cs"></script>
+<noscript><a href="http://gist.github.com/508310">View code</a> </noscript>
 
 This will ensure at compile time that the requirement is fulfilled. The code also expresses the requirements more clearly. When we cease a prescription we have to specify a reason. In the previous example we could not know that from just reading the code, and therefore we were running a risk of introducing a bug if not all developers on our team was familiar with this requirement.
 
