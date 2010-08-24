@@ -1,20 +1,20 @@
 body, html {
 	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
 }
 #header img {
 	border: 0;
 }
 #content {
 	margin: 0 auto;
-	font-family: 'Baskerville', Georgia, Times, serif;
-	font-size: 20px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 25px;
 	padding-bottom: 15px;
 	width: 720px;
 }
 #content footer {
 	font-style: italic;
-	font-size: 16px;
+	font-size: smaller;
 	color: #888;
 	line-height: normal;
 }
@@ -46,7 +46,7 @@ a:hover {
 .date {
 	font-style: italic;
 	float: right;
-	line-height: 43px;
+	line-height: 41px;
 	margin-right: 0;
 }
 .more {
@@ -67,7 +67,7 @@ a:hover {
 }
 code, .gist {
 	font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
-	font-size: small;
+	font-size: smaller;
 	line-height: normal;
 }
 pre {
@@ -87,10 +87,13 @@ blockquote {
 #archives a:hover {
 	text-decoration: underline;
 }
-#archives .date {
+#archives .date, #archives .comment {
 	font-style: italic;
-	font-size: small;
+	font-size: smaller;
 	float: none;
+}
+.comment a {
+	color: #b2beb5;
 }
 .slide-out-div { 
 	padding-right: 20px; 
@@ -112,4 +115,9 @@ blockquote {
 #about-me a { 
 	text-decoration: none;
 	color: black;
+	font-size: smaller;
+	font-weight: bold;
+}
+#about-me a:hover { 
+	text-decoration: underline;
 }
