@@ -2,7 +2,7 @@
 require "toto"
 require "gist_to_code"
 # Rack config
-use Rack::GistToCode
+#use Rack::GistToCode
 use Rack::Static, :urls => ['/css', '/js', '/images', '/gfx', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
 
