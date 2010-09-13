@@ -31,10 +31,10 @@ module Rack
       gist = ""
 
       open("http://gist.github.com/raw/#{id}/#{file_name}") do |f|
-        f.each do |line|
-          gist += line
-        end
-      end
+         f.each do |line|
+           gist += line
+         end
+       end
 
       escape_html gist
     end

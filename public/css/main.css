@@ -76,7 +76,7 @@ a:hover {
 .more a:hover { 
 	text-decoration: underline 
 }
-code, .gist {
+pre.CodeRay, .gist {
 	font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
 	font-size: smaller;
 	line-height: normal;

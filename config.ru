@@ -1,8 +1,11 @@
 
 require "toto"
 require "gist_to_code"
+require 'coderay'
+require 'rack/codehighlighter'
 # Rack config
 #use Rack::GistToCode
+use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 use Rack::Static, :urls => ['/css', '/js', '/images', '/gfx', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
 

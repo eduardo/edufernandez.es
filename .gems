@@ -1,4 +1,6 @@
 builder
 rdiscount
 toto
+rack-codehighlighter
+coderay
 
