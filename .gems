@@ -3,4 +3,5 @@ rdiscount
 toto
 rack-codehighlighter
 coderay
+haml
 
