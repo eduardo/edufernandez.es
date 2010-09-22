@@ -4,7 +4,7 @@
     %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}
       %link{:href => "/css/sexy-bookmarks.css", :rel => "stylesheet", :type => "text/css"}/
       %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}
-        %link{:href => "http://feeds.feedburner.com/thedersen", :rel => "alternate", :title => "thedersen.com", :type => "application/rss+xml"}/
+        %link{:href => "http://feeds.feedburner.com/thedersen", :rel => "alternate", :title => "edufernandez.es", :type => "application/rss+xml"}/
         %script{:src => "/js/jquery.js", :type => "text/javascript"}
         %script{:src => "/js/jquery.tabSlideOut.js", :type => "text/javascript"}
         %script{:src => "/js/site.js", :type => "text/javascript"}
@@ -14,18 +14,18 @@
   %body
     #content
       %section#header
-        %a{:href => "/"}
-          %img{:src => "/gfx/header.png"}/
+        //%a{:href => "/"}
+        //  %img{:src => "/gfx/header.png"}/
         .feed.shr-bookmarks.shr-bookmarks-expand.shr-bookmarks-bg-feed
           %ul.socials
             %li.shr-comfeed
-              %a.external{:href => "http://feeds.feedburner.com/thedersen", :rel => "nofollow", :title => "Get the Feed!"} Get the Feed!
+              //%a.external{:href => "http://feeds.feedburner.com/thedersen", :rel => "nofollow", :title => "Get the Feed!"} Get the Feed!
       %section
         = yield
       %footer
         %a{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license"}>
           %img{:alt => "Creative Commons License", :src => "http://creativecommons.org/images/public/somerights20.png", :style => "border-width:0"}/
-        The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way. This work is licensed under a
+        This work is licensed under a
         = succeed "." do
           %a{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license"} Creative Commons Attribution 3.0 Unported License
     .slide-out-div
@@ -33,36 +33,36 @@
       %ul#about-me
         %li
           %img{:src => "/gfx/twitter_32.png"}
-          %a{:href => "http://twitter.com/thedersen"} Twitter
+          %a{:href => "http://twitter.com/eduardo"} Twitter
         %li
           %img{:src => "/gfx/lastfm_32.png"}
-          %a{:href => "http://last.fm/user/thedersen"} Last.fm
+          %a{:href => "http://last.fm/user/fallonme"} Last.fm
         %li
           %img{:src => "/gfx/facebook_32.png"}
-          %a{:href => "http://facebook.com/thedersen"} Facebook
+          %a{:href => "http://facebook.com/edufernandez"} Facebook
         %li
           %img{:src => "/gfx/linkedin_32.png"}
-          %a{:href => "http://no.linkedin.com/in/thomaspedersen"} LinkedIn
-        %li
-          %img{:src => "/gfx/google_32.png"}
-          %a{:href => "https://www.google.com/reader/shared/thedersen"} Google Reader
+          %a{:href => "http://no.linkedin.com/in/edufernandezcorrales"} LinkedIn
+        //%li
+        //  %img{:src => "/gfx/google_32.png"}
+        //  %a{:href => "https://www.google.com/reader/shared/thede"} Google Reader
         %li
           %img{:src => "/gfx/github_32.png"}
-          %a{:href => "http://github.com/thedersen"} Github
+          %a{:href => "http://github.com/eduardo"} Github
     :javascript
-      var disqus_shortname = 'thedersen';
+      var disqus_shortname = 'edufernandez';
       (function () {
         var s = document.createElement('script'); s.async = true;
-        s.src = 'http://disqus.com/forums/thedersen/count.js';
+        s.src = 'http://disqus.com/forums/edufernandez/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
       }());
     :javascript
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9845978-1']);
+      _gaq.push(['_trackPageview']);
     :javascript
-      try {
-      	var pageTracker = _gat._getTracker("UA-12325477-1");
-      	pageTracker._setDomainName("none");
-      	pageTracker._setAllowLinker(true);
-      	pageTracker._trackPageview();
-      } catch(err) {}
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
