@@ -1,6 +1,11 @@
-body, html {
-	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
+html { margin: 20px }
+body {
+  margin: 0 auto;
+  font-family: 'Baskerville', Georgia, Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px;
+  width: 720px;
 }
 #header img {
 	border: 0;
