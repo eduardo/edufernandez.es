@@ -9,6 +9,15 @@ use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", 
 use Rack::Static, :urls => ['/css', '/js', '/images', '/gfx', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
 
+use Rack::Rewrite do
+  if ENV['RACK_ENV'] == 'production'
+    domain = 'jose.gr'
+    r301 %r{.*}, "http://#{domain}$&", :if => Proc.new {|rack_env|
+      rack_env['SERVER_NAME'] != domain
+    }
+  end
+end
+
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
