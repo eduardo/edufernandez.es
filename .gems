@@ -4,4 +4,5 @@ toto
 rack-codehighlighter
 coderay
 haml
+rack-rewrite
 
