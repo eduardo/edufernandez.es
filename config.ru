@@ -3,6 +3,9 @@ require "toto"
 require 'coderay'
 require 'rack/codehighlighter'
 require 'haml'
+
+require 'rack-rewrite'
+
 # Rack config
 #use Rack::GistToCode
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
@@ -11,7 +14,7 @@ use Rack::CommonLogger
 
 use Rack::Rewrite do
   if ENV['RACK_ENV'] == 'production'
-    domain = 'jose.gr'
+    domain = 'edufernandez.es'
     r301 %r{.*}, "http://#{domain}$&", :if => Proc.new {|rack_env|
       rack_env['SERVER_NAME'] != domain
     }
