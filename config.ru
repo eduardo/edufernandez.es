@@ -25,14 +25,14 @@ toto = Toto::Server.new do
   set :title,     "edufernandez.es"   	                      # site title
   set :url,       "http://edufernandez.es"                      # site root URL
   set :prefix,    ""                                          # common path prefix for all pages
-  set :date,      lambda {|now| now.strftime("%m/%d/%Y") }  # date format for articles
+  set :date,      lambda {|now| now.strftime("%d-%m-%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
   set :disqus,    "edufernandez"                                 # disqus id, or false
   set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   set :ext,       'md'                                        # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
-  set :date, lambda {|now| now.strftime("%m/%d/%Y") }
+  set :date, lambda {|now| now.strftime("%d-%m-%Y") }
   
   set :to_html,     lambda {|path, page, ctx|
      ::Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :ugly => false).render(ctx)
