@@ -5,12 +5,14 @@
   %section.content= find_and_preserve(body)
   .shr-bookmarks.shr-bookmarks-expand.shr-bookmarks-center.shr-bookmarks-bg-enjoy
     %ul.socials
+      %li.shr-twitter
+        %a.external{:href => "http://twitter.com/home", :rel => "nofollow", :title => "Tweet This!"} Tweet This!
+      %li.shr-facebook
+        %a.external{:href => "http://www.facebook.com/share.php", :rel => "nofollow", :title => "Share this on Facebook"} Share this on Facebook
       %li.shr-twittley
         %a.external{:href => "http://twittley.com/submit/", :rel => "nofollow", :title => "Submit this to Twittley"} Submit this to Twittley
       %li.shr-digg
         %a.external{:href => "http://digg.com/submit", :rel => "nofollow", :title => "Digg this!"} Digg this!
-      %li.shr-twitter
-        %a.external{:href => "http://twitter.com/home", :rel => "nofollow", :title => "Tweet This!"} Tweet This!
       %li.shr-scriptstyle
         %a.external{:href => "http://scriptandstyle.com/submit", :rel => "nofollow", :title => "Submit this to Script & Style"} Submit this to Script & Style
       %li.shr-reddit
@@ -21,8 +23,6 @@
         %a.external{:href => "http://www.stumbleupon.com/submit", :rel => "nofollow", :title => "Stumble upon something good? Share it on StumbleUpon"} Stumble upon something good? Share it on StumbleUpon
       %li.shr-technorati
         %a.external{:href => "http://technorati.com/faves", :rel => "nofollow", :title => "Share this on Technorati"} Share this on Technorati
-      %li.shr-facebook
-        %a.external{:href => "http://www.facebook.com/share.php", :rel => "nofollow", :title => "Share this on Facebook"} Share this on Facebook
   %section.comments
     - if @config[:disqus]
       #disqus_thread

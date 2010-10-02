@@ -38,7 +38,7 @@ task :ping_feed do
   toto "pinging feedburner.com..."
   require 'net/http'
   require 'uri'
-  res = Net::HTTP.get('feedburner.google.com','/fb/a/pingSubmit?bloglink=' + URI.escape('http://feeds.feedburner.com/thedersen'))
+  res = Net::HTTP.get('feedburner.google.com','/fb/a/pingSubmit?bloglink=' + URI.escape('http://feeds.feedburner.com/edufernandez'))
   if res.include? "Succesfully pinged"
     toto "Succesfully pinged"
   else

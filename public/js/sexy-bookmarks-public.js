@@ -62,7 +62,7 @@ $(function(){
 	            this.href += '?phase=2&title=' + document.title + '&url=' + url + '&desc=' + desc;
 	            break;
 	        case 'shr-twitter':
-	            this.href += '?status=RT+@thedersen:+' + document.title + '+-+' + url;
+	            this.href += '?status=RT+@eduardo:+' + document.title + '+-+' + url;
 	            break;
 	        case 'shr-scriptstyle':
 	            this.href += '?title=' + document.title + '&url=' + url;

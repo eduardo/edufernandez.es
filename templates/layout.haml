@@ -4,7 +4,7 @@
     %link{:href => "/css/main.css", :rel => "stylesheet", :type => "text/css"}
       %link{:href => "/css/sexy-bookmarks.css", :rel => "stylesheet", :type => "text/css"}/
       %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}
-        %link{:href => "http://feeds.feedburner.com/thedersen", :rel => "alternate", :title => "edufernandez.es", :type => "application/rss+xml"}/
+        %link{:href => "http://feeds.feedburner.com/edufernandez", :rel => "alternate", :title => "edufernandez.es", :type => "application/rss+xml"}/
         %script{:src => "/js/jquery.js", :type => "text/javascript"}
         %script{:src => "/js/jquery.tabSlideOut.js", :type => "text/javascript"}
         %script{:src => "/js/site.js", :type => "text/javascript"}
@@ -14,12 +14,12 @@
   %body
     #content
       %section#header
-        //%a{:href => "/"}
-        //  %img{:src => "/gfx/header.png"}/
+        %a{:href => "/"}
+          Edu Fernández
         .feed.shr-bookmarks.shr-bookmarks-expand.shr-bookmarks-bg-feed
           %ul.socials
             %li.shr-comfeed
-              //%a.external{:href => "http://feeds.feedburner.com/thedersen", :rel => "nofollow", :title => "Get the Feed!"} Get the Feed!
+              %a.external{:href => "http://feeds.feedburner.com/edufernandez", :rel => "nofollow", :title => "Get the Feed!"} Get the Feed!
       %section
         = yield
       %footer
@@ -43,9 +43,9 @@
         %li
           %img{:src => "/gfx/linkedin_32.png"}
           %a{:href => "http://no.linkedin.com/in/edufernandezcorrales"} LinkedIn
-        //%li
-        //  %img{:src => "/gfx/google_32.png"}
-        //  %a{:href => "https://www.google.com/reader/shared/thede"} Google Reader
+        %li
+          %img{:src => "/gfx/google_32.png"}
+          %a{:href => "https://www.google.com/reader/shared/eduardo.fernandez"} Google Reader
         %li
           %img{:src => "/gfx/github_32.png"}
           %a{:href => "http://github.com/eduardo"} Github
