@@ -26,5 +26,6 @@ Finalmente, aprovecho este post para recopilar una serie de enlaces que les iba 
 * Libro sobre CMMI y Agile, [Integrating CMMI and Agile Development](http://www.amazon.com/gp/product/0321714105?ie=UTF8&tag=unidadesdedespla&linkCode=xm2&camp=1789&creativeASIN=0321714105)
 * [Agile Anarchy](http://agileanarchy.wordpress.com/), el blog de Tobias Mayer, el maestro de Scrum que me instruyó a mi :-P
 * [Scrum for Kids](http://scrum4kids.blogspot.com/) y [Scrum family](http://scrumfamily.wordpress.com/) un par de blogs sobre Scrum y la vida familiar. Para empezar a pensar en aplicar Scrum en cosas que no son el desarrollo de software.
+* [Scrum.es](http://scrum.es): Donde intentamos aportar nuestro granito de arena escribiendo sobre Scrum en español.
 
 <object width="250" height="40"> <param name="movie" value="http://listen.grooveshark.com/songWidget.swf" /> <param name="wmode" value="window" /> <param name="allowScriptAccess" value="always" /> <param name="flashvars" value="hostname=cowbell.grooveshark.com&widgetID=23010857&style=metal&p=0" /> <embed src="http://listen.grooveshark.com/songWidget.swf" type="application/x-shockwave-flash" width="250" height="40" flashvars="hostname=cowbell.grooveshark.com&widgetID=23010857&style=metal&p=0" allowScriptAccess="always" wmode="window" /></object>
