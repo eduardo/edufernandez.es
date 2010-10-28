@@ -2,9 +2,9 @@
 title: Un curso de Scrum
 date: 27/10/2010
 
-El pasado lunes 25 impartí un curso de introducción a Scrum, con la colaboración de tictour.com. La verdad es que disfruté mucho de este curso porque los alumnos participaron y sus aportaciones hicieron lo hicieron mucho más interesante para todos.
+El pasado lunes 25 impartí un curso de introducción a Scrum, con la colaboración de tictour.com. La verdad es que disfruté mucho de este curso porque los alumnos participaron y sus aportaciones lo hicieron mucho más interesante para todos.
 
-Scrum es diametralmente opuesto a una metodología pesada y se cuenta en [10 minutos](http://scrum.es/scrum/explicar-scrum-en-diez-minutos/). Por eso estos cursos se estructuran más para poder *sentir* y reflexionar sobre el enfoque de iterar y refinar frente a las formas tradicionales de desarrollo de software. Para esto se hacen debates, juegos y dinámicas de grupo que permiten percibir de forma más clara lo que aportan las metodologías ágiles.
+Scrum es diametralmente opuesto a cualquier metodología pesada y se cuenta en [10 minutos](http://scrum.es/scrum/explicar-scrum-en-diez-minutos/). Por eso estos cursos se estructuran más para poder *sentir* y reflexionar sobre el enfoque de iterar y refinar frente a las formas tradicionales de desarrollo de software. Para esto se hacen debates, juegos y dinámicas de grupo que permiten percibir de forma más clara lo que aportan las metodologías ágiles.
 
 En este curso hicimos el típico [ball point game](http://borisgloger.com/2008/03/15/the-scrum-ball-point-game/), [Planning Poker](http://www.planningpoker.com) y otros juegos con cartas y distintos ejercicios.
 
@@ -16,7 +16,7 @@ También tuve la oportunidad de probar por primera vez el [Marshmallow Challenge
 
 <object width="446" height="326"><param name="movie" value="http://video.ted.com/assets/player/swf/EmbedPlayer.swf"></param><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always"/><param name="wmode" value="transparent"></param><param name="bgColor" value="#ffffff"></param> <param name="flashvars" value="vu=http://video.ted.com/talks/dynamic/TomWujec_2010U-medium.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/TomWujec-2010U.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=837&introDuration=15330&adDuration=4000&postAdDuration=830&adKeys=talk=tom_wujec_build_a_tower;year=2010;theme=not_business_as_usual;theme=a_taste_of_ted2010;event=TED2010;&preAdTag=tconf.ted/embed;tile=1;sz=512x288;" /><embed src="http://video.ted.com/assets/player/swf/EmbedPlayer.swf" pluginspace="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent" bgColor="#ffffff" width="446" height="326" allowFullScreen="true" allowScriptAccess="always" flashvars="vu=http://video.ted.com/talks/dynamic/TomWujec_2010U-medium.flv&su=http://images.ted.com/images/ted/tedindex/embed-posters/TomWujec-2010U.embed_thumbnail.jpg&vw=432&vh=240&ap=0&ti=837&introDuration=15330&adDuration=4000&postAdDuration=830&adKeys=talk=tom_wujec_build_a_tower;year=2010;theme=not_business_as_usual;theme=a_taste_of_ted2010;event=TED2010;"></embed></object>
 
-Finalmente, aprovecho este post para recopilar una serie de enlaces que les iba a enviar a los alumnos y que pongo aquí por si son de utilidad a alguien más.
+Finalmente, aprovecho este post para recopilar una serie de enlaces que les iba a enviar a los alumnos y que pongo aquí por si son de utilidad a alguien más:
 
 * [Pivotal Tracker](http://pivotaltracker.com), la herramienta de gestión de Scrum gratuita que usamos en [Flowers in Space](http://www.flowersinspace.com)
 * [Concurso Público de la Fundación IAVANTE, descrito entereamente con Scrum](http://www.juntadeandalucia.es/contratacion/ContractNoticeDetail.action?code=2010-0000007311)
