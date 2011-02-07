@@ -43,7 +43,7 @@ body {
 }
 header, footer, section, article {
 	display: block;
-	text-align: justify;
+	text-align: left;
 }
 article.post {
 	margin-top: 30px;
