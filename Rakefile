@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'toto'
 
 @config = Toto::Config::Defaults
